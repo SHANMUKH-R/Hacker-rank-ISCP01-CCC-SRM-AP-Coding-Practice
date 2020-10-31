@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+	int var1, var2, result;
+	//scan var1 and var2 and store in result their equality comparison
+    scanf("%d",&var1);
+    scanf("%d",&var2);
+    result=var1<=var2;
+
+	printf("%d", result);
+	return 0;
+}
