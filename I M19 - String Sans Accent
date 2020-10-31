@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    char str[100000];
+    scanf("%s",str);
+    //bugshatesvowels ==>bgshtsvwls
+    for(int i=0;str[i]!='\0';i++)
+    {
+        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+        {
+            
+        }
+        else
+        {
+            printf("%c",str[i]);//bg....
+        }
+        
+    }
+    return 0;
+}
+
