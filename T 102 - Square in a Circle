@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int T;
+    scanf("%d",&T);
+    
+    for(int i=0;i<T;i++)
+    {
+        double side;
+        scanf("%lf",&side);
+        double inner_radi=side/2;
+        double outer_radi=side/(sqrt(2));
+        
+        printf("%.6lf\n",acos(-1)*(outer_radi*outer_radi -inner_radi*inner_radi));
+    }
+    
+    return 0;
+}
+
