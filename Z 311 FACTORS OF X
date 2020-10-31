@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num, i, j, var;
+
+    scanf("%d", &num);
+    
+    for (i = 0; i < num; ++i) {
+        
+        scanf("%d",&var);
+        for(j=1; j<=var; j++) {
+            
+            if(var%j == 0){
+                printf("%d ", j);  
+            }
+           
+        }
+         printf("\n");
+    }
+
+    return 0;
+}
