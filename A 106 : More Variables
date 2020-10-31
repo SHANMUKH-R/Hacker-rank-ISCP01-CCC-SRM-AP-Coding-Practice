@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+	//Declare and assign values of 15 and 25 to variables var1 and var2 here
+    int var1=15;
+    int var2=25;
+	//Example : int a = 10; int b = 20; OR int a = 10, b = 20;
+
+
+	printf("%d %d", var1, var2);
+	return 0;
+}
