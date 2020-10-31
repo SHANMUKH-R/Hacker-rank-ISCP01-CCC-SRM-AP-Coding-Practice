@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    float Xa,Xb,Ya,Yb;
+    float X1a,X1b,Y1a,Y1b;
+    float slope, slope1;
+    scanf("%f %f %f %f",&Xa,&Ya,&Xb,&Yb);
+    scanf("%f %f %f %f",&X1a,&Y1a,&X1b,&Y1b);
+    slope=(Yb-Ya)/(Xb-Xa);
+    slope1=(Y1b-Y1a)/(X1b-X1a);
+    if(slope==slope1){
+        printf("yes");
+    }
+    else{
+        printf("no");
+    }
+    
+    return 0;
+}
