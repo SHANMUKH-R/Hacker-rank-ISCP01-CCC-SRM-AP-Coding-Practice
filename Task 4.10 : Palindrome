@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<ctype.h>
+int palindrome(char* str)
+{
+    int length=strlen(str);
+    int flag=0;
+    //kawaki
+    for(int i=0;i<length;i++)
+    {
+        if(str[i]!=str[length-i-1])//str[0]!=str[5]
+        {
+            flag=1;
+            break;
+        }
+    }
+    if(flag)
+        return 0;
+    else
+        return 1;
+}    
+
+	
+int main()
+{
+  char str[50];
+  gets(str);
+  printf("%d", palindrome(str));
+  return 0;
+}
