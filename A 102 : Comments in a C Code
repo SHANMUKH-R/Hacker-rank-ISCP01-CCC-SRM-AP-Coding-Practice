@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+	//This code prints Hello World! To the console.
+	printf("Hello World!");
+	return 0;
+}
+/* Printf function has been commented instead of the first line
+  Uncomment the printf function and comment the first line 
+ to make the program print Hello World!
+*/
