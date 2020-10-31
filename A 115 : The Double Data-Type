@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+	double var1, var2, div;
+	//input var1 and var2 here and print their division
+    scanf("%lf",&var1);
+    scanf("%lf",&var2);
+    div= var1/var2;
+    printf("%.12lf",div);
+    
+
+
+
+	return 0;
+}
