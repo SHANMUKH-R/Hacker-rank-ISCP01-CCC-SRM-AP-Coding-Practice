@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+	int var1, var2, sum;
+	
+	//Use scanf to input var1 and var2
+    scanf("%d",&var1);
+    scanf("%d",&var2);
+	//Store their sum in variable sum
+    sum= var1+var2;
+	//Use printf to print the value of sum
+    printf("%d",sum);
+
+
+
+	return 0;
+}
