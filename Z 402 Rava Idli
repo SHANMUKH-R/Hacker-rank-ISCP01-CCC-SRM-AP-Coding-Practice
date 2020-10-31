@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,a,b,k,i,min;
+    scanf("%d",&n);
+    for(i=1; i<=n; i++){
+        scanf("%d %d %d",&a,&b,&k);
+        if(a<b){
+            min = a;
+        }
+        else{
+            min=b;
+        }
+        printf("%d",k/min);
+        printf("\n");
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
