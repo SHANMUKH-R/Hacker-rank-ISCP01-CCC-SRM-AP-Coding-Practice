@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,j,k,N;
+    scanf("%d",&N);
+    for(n=1;n<=N;n++){
+        for(j=n;j<N;j++){
+            printf(" ");
+        }
+        for(k=1;k<(n*2);k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(n=N-1;n>=1;n--){
+        for(j=N;j>n;j--){
+            printf(" ");
+        }
+        for(k=1;k<(n*2);k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
