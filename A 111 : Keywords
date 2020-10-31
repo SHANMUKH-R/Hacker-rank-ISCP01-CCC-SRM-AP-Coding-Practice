@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{	//change the variable names so they are not keywords
+	int b_reak, c_onst;
+	scanf("%d %d", &b_reak, &c_onst);
+	printf("%d %d", b_reak, c_onst);
+	return 0;
+}
