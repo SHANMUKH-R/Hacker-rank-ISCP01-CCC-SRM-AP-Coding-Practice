@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+   int num,j,i,p=0;
+   scanf("%d",&num);
+   p=num;
+   if(num%2==0){
+   for(i=1;i<=num/2;i++)
+   {
+       for(j=1;j<num+1;j++)
+       {
+           if(j==i || j==p)
+           {
+               printf("%d",j);
+           }
+           else
+           {
+               printf(" ");
+           }
+       }
+       p--;
+       printf("\n");
+       
+   }
+   }
+   else
+   {
+       for(i=1;i<=(num+1)/2;i++)
+   {
+       for(j=1;j<=num;j++)
+       {
+           if(j==i || j==p)
+           {
+               printf("%d",j);
+           }
+           else
+           {
+               printf(" ");
+           }
+       }
+       p--;
+       printf("\n");
+       
+   }       
+   }
+}
