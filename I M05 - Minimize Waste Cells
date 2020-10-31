@@ -1,0 +1,22 @@
+import math
+
+def is_perfect_square(n):
+   
+    sr = math.sqrt(n)
+    return ((sr - math.floor(sr)) == 0)
+   
+
+a = input()
+
+if(is_perfect_square(len(a))): n = int(math.sqrt(len(a)))
+else: n = int(math.sqrt(len(a))) + 1
+   
+
+for j in range(n * n - len(a)):
+    a += "?"
+   
+for i in range(len(a)):
+    ls = [a[i:i+n] for i in range(0, len(a), n)]
+   
+for i in ls:
+    print(i)
