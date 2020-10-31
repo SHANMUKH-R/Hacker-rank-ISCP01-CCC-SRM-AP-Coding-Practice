@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int a[n][n];
+    int l=n,k=1,p=0,i;
+    while(k<=n*n)
+    {
+        for(i=p;i<l;i++) // first row of array
+        {
+            a[p][i]=k++;
+        }
+        for(i=p+1;i<l;i++) // last column of array
+        {
+            a[i][l-1]=k++;
+        }
+        for(i=l-2;i>=p;i--)  // last row of array
+        {
+            a[l-1][i]=k++;
+        }
+        for(i=l-2;i>p;i--)  // first column of array
+        {
+            a[i][p]=k++;
+        }
+        p++ , l=l-1;
+    }
+    if(!n%2) // if n is even only execute
+    {
+        a[(n+1)/2][(n+1)/2] = n*n;
+    }
+    for(i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+}
+
