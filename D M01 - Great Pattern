@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int s, c1, r, t,i,n;
+    scanf("%d", &t);
+    
+    for(i=1; i<=t; i++)
+    {
+        scanf("%d", &n);
+        
+        for(r=1; r<=n; r++)
+        {
+            for(s=1;s<=2*(n-r);s++)
+       {
+           printf(" ");
+       }
+            for(c1=1; c1<=r;c1++) 
+                printf("%d ", c1);
+            c1--;
+            for(c1--;c1>=1;c1--)
+                printf("%d ", c1);
+            printf("\n");
+            
+        }
+        for(r=n-1; r>=1; r--)
+        {
+            for(s=1;s<=2*(n-r);s++)
+            {
+                printf(" ");
+            }
+            for(c1=1; c1<=r;c1++)
+                printf("%d ", c1);
+            c1--;
+            for(c1--;c1>=1;c1--)
+                printf("%d ", c1);
+            printf("\n");
+            
+        }
+        printf("\n");
+    
+    }
+    
+    return 0;
+}
