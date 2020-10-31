@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+	long long int var1, var2, sum;
+	//input values of var1 and var2 as long long integers and print their sum;
+    scanf("%lld%lld", &var1,&var2);
+    sum=var1+var2;
+
+
+
+	printf("%lld", sum);	
+	return 0;
+}
