@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int Q, number, is_prime;
+    scanf("%d",&Q);
+    
+    while (Q > 0){
+        scanf("%d",&number);
+        if(number<=1){
+            is_prime = 0;
+        }else if(number >= 2){
+            is_prime = 1;
+        }
+        for (int i = 2; i < number; i++){
+            if(number%i == 0){
+                is_prime = 0;
+                break;
+            }
+        }
+        if (is_prime == 1) printf("yes\n");
+        if (is_prime == 0) printf("no\n");
+        Q--;
+    }
+    return 0;
+}
