@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int f,b,t,d;
+        scanf("%d%d%d%d",&f,&b,&t,&d);
+        int diff,ans=0;
+            
+            while(d-b>0)
+            {
+                diff=b-f;
+                d=d-diff;
+                ans=ans+b+f;
+            }
+                  
+            ans=ans+d;
+            printf("%d\n",ans*t);
+    }
+    return 0;
+}
